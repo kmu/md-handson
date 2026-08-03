@@ -1,0 +1,6 @@
+#!/bin/bash
+set -euo pipefail
+
+# Recorded in the build log so a broken viewer can be diagnosed without a rebuild.
+# nglview must appear here as "enabled OK" for the 3D viewer to work.
+jupyter labextension list

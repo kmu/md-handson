@@ -1,0 +1,28 @@
+name: md-handson
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - matplotlib
+  - ase
+  - asap3
+  - pymatgen
+  - mp-api
+  # The viewer breaks unless nglview and the Jupyter widget stack are pinned
+  # together: nglview ships a prebuilt labextension whose version must match
+  # what jupyterlab-manager registers.
+  - nglview=3.1.4
+  - jupyterlab=4.5.*
+  - ipywidgets=8.1.*
+  # nglview 3.1.4 imports pkg_resources, dropped in setuptools 81
+  - setuptools<81
+  # nglview sends structure data from a background thread, which ipykernel 7.0
+  # rejects with LookupError on the shell_parent ContextVar. The viewer then
+  # renders an empty box. Fixed in 7.1 (ipython/ipykernel#1450).
+  - ipykernel>=7.1
+  - gpaw=*=*nompi*
+  - gpaw-data
+  - pytorch-cpu>=2.4.1
+  - chgnet
+  - japanize_matplotlib
