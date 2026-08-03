@@ -26,3 +26,11 @@ dependencies:
   - pytorch-cpu>=2.4.1
   - chgnet
   - japanize-matplotlib
+  - pandas
+  - plotly
+  - dash
+  - pip
+  - pip:
+      # CHGNet examples extra; used for relaxation trajectory viewer
+      # https://github.com/CederGroupHub/chgnet/blob/main/examples/crystaltoolkit_relax_viewer.ipynb
+      - crystal-toolkit>=2023.11.3
