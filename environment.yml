@@ -25,4 +25,4 @@ dependencies:
   - gpaw-data
   - pytorch-cpu>=2.4.1
   - chgnet
-  - japanize_matplotlib
+  - japanize-matplotlib
