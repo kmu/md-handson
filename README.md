@@ -5,7 +5,7 @@
 A Binder-compatible repo with an `environment.yml` file, based on
 [binder-examples/conda](https://github.com/binder-examples/conda).
 
-Packages: **ASE**, **ASAP3**, **pymatgen**, **mp-api**, **nglview**, **GPAW**, **CHGNet**, **Crystal Toolkit**.
+Packages: **ASE**, **ASAP3**, **pymatgen**, **mp-api**, **nglview**, **GPAW**, **CHGNet**.
 
 Launch: https://mybinder.org/v2/gh/kmu/md-handson/HEAD?urlpath=lab%2Ftree%2Findex.ipynb
 
@@ -19,7 +19,6 @@ Launch: https://mybinder.org/v2/gh/kmu/md-handson/HEAD?urlpath=lab%2Ftree%2Finde
 `nglview` bundles a prebuilt labextension whose version has to match the one
 `jupyterlab-manager` registers.
 
-First build is slower (PyTorch CPU + GPAW + Crystal Toolkit). Keep GPAW examples small on Binder.
-Open `index.ipynb` in JupyterLab for the Japanese hands-on (structures → Materials Project → GPAW → ASAP MD → CHGNet MD → CHGNet relax / Crystal Toolkit → Al surface oxidation).
+First build is slower (PyTorch CPU + GPAW). Keep GPAW examples small on Binder.
+Open `index.ipynb` in JupyterLab for the Japanese hands-on (structures → GPAW electron density → NaCl DFT scan → DFT opt → Materials Project → EMT opt → ASAP MD → CHGNet MD → CHGNet relax / nglview → Al surface oxidation).
 For the Materials Project section, set `MP_API_KEY` (see [API docs](https://next-gen.materialsproject.org/api)).
-CHGNet relaxation viewer follows [crystaltoolkit_relax_viewer.ipynb](https://github.com/CederGroupHub/chgnet/blob/main/examples/crystaltoolkit_relax_viewer.ipynb).
