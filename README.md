@@ -1,7 +1,6 @@
 # MD hands-on
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/kmu/md-handson/HEAD?urlpath=lab%2Ftree%2Findex.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kmu/md-handson/blob/main/index.ipynb)
 
 A Binder-compatible repo with an `environment.yml` file, based on
 [binder-examples/conda](https://github.com/binder-examples/conda).
@@ -34,3 +33,7 @@ Runtime restart may be required after the first install. Prefer a GPU runtime fo
 First build is slower (PyTorch CPU + GPAW). Keep GPAW examples small on Binder.
 Open `index.ipynb` in JupyterLab for the Japanese hands-on (structures → GPAW electron density → NaCl DFT scan → DFT opt → Materials Project → EMT opt → ASAP MD → CHGNet MD → CHGNet relax / nglview → Al surface oxidation).
 For the Materials Project section, set `MP_API_KEY` (see [API docs](https://next-gen.materialsproject.org/api)).
+
+## Colab support
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kmu/md-handson/blob/main/index.ipynb)
